@@ -17,12 +17,14 @@ library = [
 ];
 
 function showReadingStatus(books) {
-  books.forEach(book => {
+  const bookStatus = books.map(book => {
     if (book.readingStatus) {
-      console.log(`Already read "${book.title}" by ${book.author}.`);
+      return `Already read "${book.title}" by ${book.author}.`;
     } else {
-      console.log(`You still have to read "${book.title}" by ${book.author}.`);
+      return `You still have to read "${book.title}" by ${book.author}.`;
     }
   });
+  const text = bookStatus.join("<br>");
+  document.getElementById("text").innerHTML = text;
 }
 showReadingStatus(library);
