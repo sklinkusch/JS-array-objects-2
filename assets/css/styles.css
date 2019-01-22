@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: aqua;
+}
+#text {
+  margin: 20px;
+  font-size: red;
+  font-weight: bold;
+  font-size: 26pt;
+}
